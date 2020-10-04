@@ -16,7 +16,7 @@ public class JavaOop2 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // Создание экземпляра (объекта) типа TodoItem
         // и присвоение ссылки на него в переменную того же типа
         TodoItem item1 = new TodoItem();
@@ -30,14 +30,24 @@ public class JavaOop2 {
         System.out.println(item1.id);
         System.out.println(item1.title);
         
-        System.out.println(item1.details);
+        // System.out.println(item1.details);
+        // Вызов метода getDetails из объекта item1.
+        // Метод после своего завершения возвращает строку из закрытого поля details
+        System.out.println(item1.getDetails());
         System.out.println(item1.date);
         System.out.println(item1.done);
-        item1.details = "444444444";
+        // item1.details = "444444444";
+        // item1.details = "";
+        // Вызов метода setDetails из объекта item1
+        // с передачей ему значения аргумента - "444444444"
+        item1.setDetails("444444444");
+        // item1.setDetails(null);
+        // item1.setDetails("");
         // 05.10.2020 8:00
         item1.date = new Date(120, 9, 5, 8, 0);
         item1.done = false;
-        System.out.println(item1.details);
+        // System.out.println(item1.details);
+        System.out.println(item1.getDetails());
         System.out.println(item1.date);
         System.out.println(item1.done);
     }
