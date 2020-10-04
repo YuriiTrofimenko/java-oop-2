@@ -5,6 +5,8 @@
  */
 package org.tyaa.demo;
 
+import java.util.Date;
+
 /**
  *
  * @author student
@@ -15,4 +17,10 @@ public class TodoItem {
     public Integer id;
     // Поле объекта - заголовок
     public String title;
+    // Подробности задачи
+    public String details;
+    // Дата и время, на которые планируется выпонить задачу
+    public Date date;
+    // Признак завершенности задачи
+    public Boolean done;
 }

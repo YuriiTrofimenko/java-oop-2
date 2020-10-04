@@ -5,6 +5,8 @@
  */
 package org.tyaa.demo;
 
+import java.util.Date;
+
 /**
  *
  * @author student
@@ -27,6 +29,17 @@ public class JavaOop2 {
         // Повторный вывод данных из полей объекта item1 в консоль
         System.out.println(item1.id);
         System.out.println(item1.title);
+        
+        System.out.println(item1.details);
+        System.out.println(item1.date);
+        System.out.println(item1.done);
+        item1.details = "444444444";
+        // 05.10.2020 8:00
+        item1.date = new Date(120, 9, 5, 8, 0);
+        item1.done = false;
+        System.out.println(item1.details);
+        System.out.println(item1.date);
+        System.out.println(item1.done);
     }
     
 }
