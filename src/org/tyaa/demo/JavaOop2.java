@@ -22,18 +22,18 @@ public class JavaOop2 {
         TodoItem item1 = new TodoItem();
         // Вывод данных из полей объекта item1 в консоль
         System.out.println(item1.id);
-        System.out.println(item1.title);
+        System.out.println(item1.getTitle());
         // Присвоение данных в поля объекта item1
         item1.id = 1;
-        item1.title = "Купить хлеб";
+        item1.setTitle("Купить хлеб");
         // Повторный вывод данных из полей объекта item1 в консоль
         System.out.println(item1.id);
-        System.out.println(item1.title);
+        System.out.println(item1.getTitle());
         
         // System.out.println(item1.details);
         // Вызов метода getDetails из объекта item1.
         // Метод после своего завершения возвращает строку из закрытого поля details
-        System.out.println(item1.getDetails());
+        /* System.out.println(item1.getDetails());
         System.out.println(item1.date);
         System.out.println(item1.done);
         // item1.details = "444444444";
@@ -49,7 +49,13 @@ public class JavaOop2 {
         // System.out.println(item1.details);
         System.out.println(item1.getDetails());
         System.out.println(item1.date);
-        System.out.println(item1.done);
+        System.out.println(item1.done); */
+        
+        // System.out.println(Math.cube(2d));
+        // System.out.println(Math.cube(2.0));
+        /*System.out.println(Math.ext(2.0, 3));
+        System.out.println(Math.ext(2.0, 4));
+        System.out.println(Math.ext(2.0, 5));*/
     }
     
 }

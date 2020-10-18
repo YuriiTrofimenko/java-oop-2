@@ -16,13 +16,13 @@ public class TodoItem {
     // Поле объекта - уникальный идентификатор пункта списка задач
     public Integer id;
     // Поле объекта - заголовок
-    public String title;
+    private String title;
     // Подробности задачи (закрытое поле)
     private String details;
     // Дата и время, на которые планируется выпонить задачу
     public Date date;
     // Признак завершенности задачи
-    public Boolean done;
+    public Boolean done = false;
     // Метод (функция, являющаяся членом класса) установки значения в поле details 
     // Тип возвращаемого значения - void
     // Аргумент метода - details типа String
@@ -52,5 +52,16 @@ public class TodoItem {
     public String getDetails() {
         // вернуть строку, хранящуюся в поле details
         return details;
+    }
+    public void setTitle(String title) throws Exception {
+        if (title != null && !title.equals("")) {
+            this.title = title;
+        } else {
+            throw new Exception("Аргумент title не должен быть пустым и не должен содержать пустую строку");
+        }
+   }
+
+    public String getTitle() {
+        return this.title;
     }
 }
